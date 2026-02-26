@@ -23,7 +23,7 @@ jobs:
               uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
 
             - name: Run Slither
-              uses: crytic/slither-action@230a81be4564bd7c5c4b51b199af246e9db92e5b # v0.2.0
+              uses: crytic/slither-action@b52cc1cbfee9ca3e8722dd5224299d16c9a6b80f # v0.4.2
               id: slither
               with:
                   node-version: 20
