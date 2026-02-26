@@ -4,6 +4,9 @@ on:
     push:
     pull_request:
 
+permissions:
+  contents: read
+
 jobs:
     analyze:
         runs-on: ubuntu-latest
@@ -11,11 +14,16 @@ jobs:
             contents: read
             security-events: write
         steps:
+            - name: Harden the runner (Audit all outbound calls)
+              uses: step-security/harden-runner@a90bcbc6539c36a85cdfeb73f7e2f433735f215b # v2.15.0
+              with:
+                egress-policy: audit
+
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
 
             - name: Run Slither
-              uses: crytic/slither-action@v0.2.0
+              uses: crytic/slither-action@230a81be4564bd7c5c4b51b199af246e9db92e5b # v0.2.0
               id: slither
               with:
                   node-version: 20
@@ -23,6 +31,6 @@ jobs:
                   fail-on: none
 
             - name: Upload SARIF file
-              uses: github/codeql-action/upload-sarif@v2
+              uses: github/codeql-action/upload-sarif@b8d3b6e8af63cde30bdc382c0bc28114f4346c88 # v2.28.1
               with:
                   sarif_file: ${{ steps.slither.outputs.sarif }}
