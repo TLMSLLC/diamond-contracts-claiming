@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/DMDcoin/diamond-contracts-claiming#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.5",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@typechain/ethers-v6": "^0.5.1",
     "@types/elliptic": "^6.4.18",
