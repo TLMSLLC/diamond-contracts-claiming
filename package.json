@@ -35,7 +35,7 @@
     "base58check": "^2.0.0",
     "bitcoinjs-lib": "^6.1.5",
     "bitcoinjs-message": "^2.2.0",
-    "bs58check": "^3.0.1",
+    "bs58check": "^4.0.0",
     "chai": "^4.2.0",
     "ecpair": "^2.1.0",
     "elliptic": "^6.6.1",
