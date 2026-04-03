@@ -33,7 +33,7 @@
     "@typechain/ethers-v6": "^0.5.1",
     "@types/elliptic": "^6.4.18",
     "base58check": "^2.0.0",
-    "bitcoinjs-lib": "^6.1.5",
+    "bitcoinjs-lib": "^7.0.1",
     "bitcoinjs-message": "^2.2.0",
     "bs58check": "^3.0.1",
     "chai": "^4.2.0",
