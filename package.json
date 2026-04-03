@@ -37,7 +37,7 @@
     "bitcoinjs-message": "^2.2.0",
     "bs58check": "^3.0.1",
     "chai": "^4.2.0",
-    "ecpair": "^2.1.0",
+    "ecpair": "^3.0.1",
     "elliptic": "^6.6.1",
     "js-sha256": "^0.11.1",
     "secp256k1": "^5.0.1",
